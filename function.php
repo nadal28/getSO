@@ -18,7 +18,7 @@ function getSO($user_agent){
 		'Linux' => 'Linux',
 		);
 	foreach($plataformas as $plataforma=>&$pattern){
-		if(preg_match('/'.$pattern.'/i', $user_agent))
+		if(preg_match("/$pattern/i", $user_agent))
 			return $plataforma;
 	}
 	return 'Otro';
