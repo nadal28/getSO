@@ -1,4 +1,5 @@
-function getSO(&$user_agent){
+<?php
+function getSO($user_agent){
 	$plataformas = array(
 		'Windows 10' => 'Windows NT 10.0+',
 		'Windows 8.1' => 'Windows NT 6.3+',
@@ -22,3 +23,4 @@ function getSO(&$user_agent){
 	}
 	return 'Otro';
 }
+?>
